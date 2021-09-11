@@ -1,0 +1,71 @@
+$ sudo yum update -y
+```
+$ sudo yum install -y yum-utils
+```
+$ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+```
+
+$ sudo yum -y install terraform
+
+$ terraform version
+```
+AmazonEC2FullAccess
+
+$ terraform -help
+$ terraform -help apply
+$ terraform apply -help
+```
+
+
+$ aws configure
+```
+
+$ mkdir terraform-aws && cd terraform-aws && touch main.tf
+```
+
+$ terraform init
+
+$ terraform plan
+
+terraform apply
+```
+
+$ terraform state list
+aws_instance.tf-ec2
+
+terraform plan
+
+terraform apply
+```
+
+```bash
+terraform apply -auto-approve
+```
+
+```bash
+terraform plan -out=justs3
+
+terraform apply justs3
+```
+
+$ terraform validate 
+
+terraform fmt
+```
+
+$ terraform state list
+
+terraform destroy
+
+
+Terraform Documentation
+Hashicorp/terraform (Github Page)
+Shuaibiyy/awesome-terraform
+tfutils/tfenv
+gruntwork-io/terragrunt
+28mm/blast-Radius
+Terraform Registry
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
+https://learn.hashicorp.com/tutorials/terraform/install-cli
